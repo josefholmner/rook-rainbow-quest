@@ -1,6 +1,6 @@
 # World 3, level 6: Knights Join In
 
-Version: 0.8.0. Stable ID: `chess-06`.
+Version: 0.10.0. Stable ID: `chess-06`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Bring your knight into the game without leaving your king in check.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, knight b1, pawn a2, pawn b2, pawn c2. Opponent: king e8, pawn a7, pawn b7, pawn c7.
+8 × 8. Player: king e1, bishop c1, knight c3, pawn a2, pawn b2, pawn c4. Opponent: king e8, pawn a7, pawn b7, pawn c7.
 
 Initial material advantage: 6 points.
+
+Distinct starting formation: b1 → c3, c2 → c4. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 
@@ -20,7 +22,7 @@ Opponent: safety 1, with an occasional second-choice legal move every 4 replies.
 
 ## Tested opening
 
-3 tested player moves against the configured opponent: a2 → a4, c2 → c4, a4 → b5. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
+3 tested player moves against the configured opponent: a2 → a4, c1 → d2, a4 → b5. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
 
 ## Icon and future tweaks
 

@@ -18,7 +18,7 @@
     },
     {
       "piece": "knight",
-      "square": "b1"
+      "square": "c3"
     },
     {
       "piece": "knight",
@@ -38,11 +38,11 @@
     },
     {
       "piece": "pawn",
-      "square": "d2"
+      "square": "d3"
     },
     {
       "piece": "pawn",
-      "square": "e2"
+      "square": "e4"
     },
     {
       "piece": "pawn",
@@ -71,12 +71,12 @@
       "to": "a4"
     },
     {
-      "from": "c2",
-      "to": "c4"
+      "from": "f2",
+      "to": "f4"
     },
     {
-      "from": "e2",
-      "to": "e4"
+      "from": "b2",
+      "to": "c3"
     }
   ],
   "finalBoss": false,
@@ -138,7 +138,7 @@
     },
     {
       "piece": "knight",
-      "square": "b8"
+      "square": "c6"
     },
     {
       "piece": "knight",
@@ -162,7 +162,7 @@
     },
     {
       "piece": "pawn",
-      "square": "e7"
+      "square": "e5"
     },
     {
       "piece": "pawn",

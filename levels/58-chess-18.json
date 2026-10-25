@@ -6,7 +6,7 @@
     },
     {
       "piece": "bishop",
-      "square": "c1"
+      "square": "f4"
     },
     {
       "piece": "bishop",
@@ -18,7 +18,7 @@
     },
     {
       "piece": "knight",
-      "square": "g1"
+      "square": "f3"
     },
     {
       "piece": "pawn",
@@ -34,11 +34,11 @@
     },
     {
       "piece": "pawn",
-      "square": "d2"
+      "square": "d4"
     },
     {
       "piece": "pawn",
-      "square": "e2"
+      "square": "e3"
     },
     {
       "piece": "pawn",
@@ -63,16 +63,16 @@
   "exampleSolution": [],
   "exampleTurns": [
     {
+      "from": "f4",
+      "to": "c7"
+    },
+    {
+      "from": "f1",
+      "to": "b5"
+    },
+    {
       "from": "a2",
       "to": "a4"
-    },
-    {
-      "from": "c2",
-      "to": "c4"
-    },
-    {
-      "from": "e2",
-      "to": "e4"
     }
   ],
   "finalBoss": false,
@@ -134,7 +134,7 @@
     },
     {
       "piece": "knight",
-      "square": "g8"
+      "square": "f6"
     },
     {
       "piece": "pawn",
@@ -150,7 +150,7 @@
     },
     {
       "piece": "pawn",
-      "square": "d7"
+      "square": "d5"
     },
     {
       "piece": "pawn",

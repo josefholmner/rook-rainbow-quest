@@ -1,6 +1,6 @@
 [package]
 name = "rook-rainbow-quest"
-version = "0.9.0"
+version = "0.10.0"
 default-run = "rook-rainbow-quest"
 edition = "2021"
 description = "A cheerful native desktop chess adventure for young children"

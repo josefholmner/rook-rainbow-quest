@@ -2,11 +2,11 @@
   "allies": [
     {
       "piece": "bishop",
-      "square": "c1"
+      "square": "b2"
     },
     {
       "piece": "bishop",
-      "square": "f1"
+      "square": "g2"
     },
     {
       "piece": "pawn",
@@ -14,11 +14,11 @@
     },
     {
       "piece": "pawn",
-      "square": "b2"
+      "square": "b3"
     },
     {
       "piece": "pawn",
-      "square": "c2"
+      "square": "c3"
     }
   ],
   "board": {
@@ -31,16 +31,16 @@
   "exampleSolution": [],
   "exampleTurns": [
     {
-      "from": "f1",
-      "to": "d3"
+      "from": "g2",
+      "to": "b7"
+    },
+    {
+      "from": "b7",
+      "to": "c6"
     },
     {
       "from": "a2",
       "to": "a4"
-    },
-    {
-      "from": "a4",
-      "to": "b5"
     }
   ],
   "finalBoss": false,

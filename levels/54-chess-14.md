@@ -1,6 +1,6 @@
 # World 3, level 14: Pieces Work Together
 
-Version: 0.8.0. Stable ID: `chess-14`.
+Version: 0.10.0. Stable ID: `chess-14`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Let your pieces protect one another.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, bishop f1, knight b1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2, pawn f2, pawn g2, pawn h2. Opponent: king e8, bishop c8, bishop f8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7, pawn g7, pawn h7.
+8 × 8. Player: king e1, bishop c1, bishop c4, knight c3, pawn a2, pawn b2, pawn c2, pawn d2, pawn e3, pawn f2, pawn g2, pawn h2. Opponent: king e8, bishop c8, bishop e7, pawn a7, pawn b7, pawn c7, pawn d7, pawn e6, pawn f7, pawn g7, pawn h7.
 
 Initial material advantage: 3 points.
+
+Distinct starting formation: b1 → c3, f1 → c4, e2 → e3. Enemy development: f8 → e7, e7 → e6. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 
@@ -20,7 +22,7 @@ Opponent: safety 2, with an occasional second-choice legal move every 7 replies.
 
 ## Tested opening
 
-3 tested player moves against the configured opponent: a2 → a4, c2 → c4, e2 → e4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
+3 tested player moves against the configured opponent: a2 → a4, g2 → g4, h2 → h4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
 
 ## Icon and future tweaks
 

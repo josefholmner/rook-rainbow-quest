@@ -7,6 +7,14 @@
     {
       "piece": "rook",
       "square": "b2"
+    },
+    {
+      "piece": "pawn",
+      "square": "e2"
+    },
+    {
+      "piece": "pawn",
+      "square": "f2"
     }
   ],
   "board": {
@@ -18,12 +26,16 @@
   "exampleSolution": [],
   "exampleTurns": [
     {
-      "from": "c1",
-      "to": "f4"
+      "from": "b2",
+      "to": "b5"
     },
     {
       "from": "a1",
-      "to": "d1"
+      "to": "a4"
+    },
+    {
+      "from": "c1",
+      "to": "e1"
     }
   ],
   "goal": "checkmate",

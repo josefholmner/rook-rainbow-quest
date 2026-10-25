@@ -6,8 +6,8 @@
 **/archives/
 *.zip
 !/dist/Play-RookRainbowQuest.cmd
-!/dist/RookRainbowQuest-0.9.0/
-!/dist/RookRainbowQuest-0.9.0-Windows-x64.zip
-!/dist/RookRainbowQuest-0.9.0.sha256
+!/dist/RookRainbowQuest-0.10.0/
+!/dist/RookRainbowQuest-0.10.0-Windows-x64.zip
+!/dist/RookRainbowQuest-0.10.0.sha256
 
 !/dist/Play Rook Rainbow Quest.exe

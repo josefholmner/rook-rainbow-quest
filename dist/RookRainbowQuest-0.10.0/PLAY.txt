@@ -1,4 +1,4 @@
-ROOK RAINBOW QUEST — v0.9.0
+ROOK RAINBOW QUEST — v0.10.0
 
 SPELA / PLAY
 Dubbelklicka på Play Rook Rainbow Quest.exe (tornikonen).

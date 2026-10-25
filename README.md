@@ -1,12 +1,12 @@
 # Rook Rainbow Quest
 
-A colorful native Windows chess adventure for children aged 6–7. Version **0.9.0** has sixty individually described levels across three worlds, a Mario-style level trail, a smiling-rook mascot, hints, sound, animation and unlimited retries. The game starts in Swedish; Settings switches all UI text to English. The product name stays **Rook Rainbow Quest** in both languages.
+A colorful native Windows chess adventure for children aged 6–7. Version **0.10.0** has sixty individually described levels across three worlds, a Mario-style level trail, a smiling-rook mascot, hints, sound, animation and unlimited retries. Result banners leave the board visible for learning, and later worlds have distinct starting formations. The game starts in Swedish; Settings switches all UI text to English. The product name stays **Rook Rainbow Quest** in both languages.
 
 ## Play
 
 Double-click **`dist/Play Rook Rainbow Quest.exe`**. It opens the current versioned release without a console window. Keep the launcher beside the release folder; create a desktop shortcut instead of moving it by itself.
 
-For a portable copy, extract **`dist/RookRainbowQuest-0.9.0-Windows-x64.zip`** and open **`Play Rook Rainbow Quest.exe`** inside. The entire game, levels, fonts, artwork, icons and sounds are embedded. Windows 10/11 x64 is required; players need no installer, browser, Rust or internet connection. The ZIP includes license notices. `Play-RookRainbowQuest.cmd` is a compatibility fallback.
+For a portable copy, extract **`dist/RookRainbowQuest-0.10.0-Windows-x64.zip`** and open **`Play Rook Rainbow Quest.exe`** inside. The entire game, levels, fonts, artwork, icons and sounds are embedded. Windows 10/11 x64 is required; players need no installer, browser, Rust or internet connection. The ZIP includes license notices. `Play-RookRainbowQuest.cmd` is a compatibility fallback.
 
 Arrows move between worlds and levels; Enter enters the selected stop. Use the mouse to select a piece and its destination. Tab/Shift+Tab and Enter activate buttons. M toggles sound; F11 toggles fullscreen. Continue becomes available after starting an adventure. New Game confirms before clearing the selected player's progress. Two player profiles have independent stars and settings include an Unlock all levels option that does not award stars.
 

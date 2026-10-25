@@ -2,7 +2,7 @@
   "allies": [
     {
       "piece": "bishop",
-      "square": "c1"
+      "square": "b2"
     },
     {
       "piece": "pawn",
@@ -10,7 +10,7 @@
     },
     {
       "piece": "pawn",
-      "square": "b2"
+      "square": "b3"
     },
     {
       "piece": "pawn",
@@ -18,7 +18,7 @@
     },
     {
       "piece": "pawn",
-      "square": "d2"
+      "square": "d4"
     },
     {
       "piece": "pawn",

@@ -2,7 +2,7 @@
   "allies": [
     {
       "piece": "bishop",
-      "square": "c1"
+      "square": "b5"
     },
     {
       "piece": "pawn",
@@ -14,7 +14,7 @@
     },
     {
       "piece": "pawn",
-      "square": "c2"
+      "square": "c3"
     },
     {
       "piece": "pawn",
@@ -22,7 +22,7 @@
     },
     {
       "piece": "pawn",
-      "square": "e2"
+      "square": "e3"
     },
     {
       "piece": "pawn",
@@ -47,12 +47,12 @@
       "to": "a4"
     },
     {
-      "from": "c2",
-      "to": "c4"
+      "from": "d2",
+      "to": "d4"
     },
     {
-      "from": "e2",
-      "to": "e4"
+      "from": "f2",
+      "to": "f4"
     }
   ],
   "finalBoss": false,

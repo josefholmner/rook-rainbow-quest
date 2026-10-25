@@ -1,4 +1,4 @@
-# Rook Rainbow Quest v0.9.0 — Three worlds, sixty levels
+# Rook Rainbow Quest v0.10.0 — Three worlds, sixty levels
 
 The larger world map contains three worlds with twenty levels each. World 3 adds Royal Chess Kingdom; see [the regular-chess guide](WORLD-3.md). World 2 unlocks when World 1 is complete; see [the checkmate guide](WORLD-2.md). World 1 is Sunflower Meadows (Solrosängarna). World 2 is Checkmate Castle (Schackmattslottet), with 6×6 boards throughout. The top-level map is Adventure Galaxy (Äventyrsgalaxen). Its inner trail keeps the three areas (Piece Garden, Friendly Matches, Team Adventures). Each row links to an individual description with exact board, icon, example and tuning notes.
 

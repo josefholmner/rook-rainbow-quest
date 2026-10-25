@@ -10,7 +10,7 @@
     },
     {
       "piece": "bishop",
-      "square": "d1"
+      "square": "e2"
     },
     {
       "piece": "knight",
@@ -22,7 +22,7 @@
     },
     {
       "piece": "pawn",
-      "square": "c2"
+      "square": "c3"
     }
   ],
   "board": {
@@ -35,23 +35,15 @@
   "exampleTurns": [
     {
       "from": "b2",
-      "to": "d3"
-    },
-    {
-      "from": "c2",
-      "to": "d3"
-    },
-    {
-      "from": "b1",
-      "to": "c1"
-    },
-    {
-      "from": "d1",
-      "to": "b3"
+      "to": "c4"
     },
     {
       "from": "c1",
       "to": "f1"
+    },
+    {
+      "from": "b1",
+      "to": "f5"
     }
   ],
   "goal": "checkmate",

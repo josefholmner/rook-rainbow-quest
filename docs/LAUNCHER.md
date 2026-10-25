@@ -1,4 +1,4 @@
-# Native launcher — Rook Rainbow Quest v0.9.0
+# Native launcher — Rook Rainbow Quest v0.10.0
 
 Open `dist/Play Rook Rainbow Quest.exe`, identified by a smiling cream rook on a gold/purple tile. It starts the game directly without a terminal or an extra menu. For a desktop entry, create a shortcut to this executable; keep the executable beside the release folder.
 

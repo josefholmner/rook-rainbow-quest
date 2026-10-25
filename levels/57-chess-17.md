@@ -1,6 +1,6 @@
 # World 3, level 17: Opening Practice
 
-Version: 0.8.0. Stable ID: `chess-17`.
+Version: 0.10.0. Stable ID: `chess-17`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Develop your pieces and keep your king safe.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, rook a1, bishop c1, bishop f1, knight b1, knight g1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2, pawn f2, pawn g2, pawn h2. Opponent: king e8, rook a8, rook h8, bishop c8, bishop f8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7, pawn g7, pawn h7.
+8 × 8. Player: king e1, rook a1, bishop c1, bishop e2, knight c3, knight g1, pawn a2, pawn b2, pawn c2, pawn d4, pawn e3, pawn f2, pawn g2, pawn h2. Opponent: king e8, rook a8, rook h8, bishop c8, bishop f8, pawn a6, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7, pawn g7, pawn h7.
 
 Initial material advantage: 1 points.
+
+Distinct starting formation: e2 → e3, f1 → e2, b1 → c3, d2 → d4. Enemy development: a7 → a6. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 
@@ -20,7 +22,7 @@ Opponent: safety 3, with an occasional second-choice legal move every 8 replies.
 
 ## Tested opening
 
-3 tested player moves against the configured opponent: a2 → a4, c2 → c4, e2 → e4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
+3 tested player moves against the configured opponent: a2 → a4, f2 → f4, h2 → h4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
 
 ## Icon and future tweaks
 

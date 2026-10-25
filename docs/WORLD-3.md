@@ -1,8 +1,8 @@
-# World 3 — Royal Chess Kingdom, Rook Rainbow Quest v0.9.0
+# World 3 — Royal Chess Kingdom, Rook Rainbow Quest v0.10.0
 
 Twenty individually described levels introduce regular chess on an 8×8 board. Both teams have exactly one king. The first five focus on king safety, pawn double moves, castling, en passant and promotion choice. Armies then grow from reduced positions to equal teams; level 20 is the complete standard starting position, marked with a castle icon and FINAL BOSS / SLUTBOSS label.
 
-The player is White, moves first and must checkmate Black to earn a star. The first level gives a 14-point material advantage. That advantage never increases and reaches zero by level 18. Both armies have sixteen pieces in the finale. Worlds 1 and 2 retain their original data, winning routes, rules, opponents and stable IDs.
+The player is White, moves first and must checkmate Black to earn a star. The first level gives a 14-point material advantage. That advantage never increases and reaches zero by level 18. Both armies have sixteen pieces in the finale. World 1 retains its original level data and routes. World 2 has its own reviewed formations; all worlds keep their stable IDs and rules.
 
 ## Regular rules
 
@@ -42,6 +42,12 @@ Each JSON contains three verified player opening moves with actual opponent repl
 | 18 | [Both Wings Ready](../levels/58-chess-18.md) | 14 vs 14 | +0 | king |
 | 19 | [One More Adventure](../levels/59-chess-19.md) | 15 vs 15 | +0 | king |
 | 20 | [Grand Castle](../levels/60-chess-20.md) | 16 vs 16 | +0 | Castle / FINAL BOSS |
+
+## Formation variety in v0.10.0
+
+All twenty friendly formations and complete positions are distinct. The first five special-rule lessons and full starting-position finale are retained. Levels 6–19 vary developed bishops/knights and pawn structures on both wings and in the center, with a few developed enemy formations later on. Piece counts and the material-edge curve in the table remain unchanged. Each paired description records its specific changes and verified opening; those openings remain examples, not forced-win claims.
+
+Draw, retry and victory banners now sit below the board with a translucent cream background, leaving the final position visible.
 
 ## Per-level edits
 

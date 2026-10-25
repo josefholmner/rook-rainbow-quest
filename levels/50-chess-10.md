@@ -1,6 +1,6 @@
 # World 3, level 10: A Growing Army
 
-Version: 0.8.0. Stable ID: `chess-10`.
+Version: 0.10.0. Stable ID: `chess-10`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Bring more of your army into the adventure.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2, pawn f2, pawn g2. Opponent: king e8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7.
+8 × 8. Player: king e1, bishop b2, pawn a2, pawn b3, pawn c2, pawn d4, pawn e2, pawn f2, pawn g2. Opponent: king e8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7.
 
 Initial material advantage: 4 points.
+
+Distinct starting formation: b2 → b3, c1 → b2, d2 → d4. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 

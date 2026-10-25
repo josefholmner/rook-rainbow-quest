@@ -10,7 +10,7 @@
     },
     {
       "piece": "bishop",
-      "square": "d1"
+      "square": "e2"
     },
     {
       "piece": "knight",
@@ -34,12 +34,12 @@
       "to": "c4"
     },
     {
-      "from": "d1",
-      "to": "a4"
+      "from": "b1",
+      "to": "f5"
     },
     {
-      "from": "b1",
-      "to": "b5"
+      "from": "e2",
+      "to": "f3"
     }
   ],
   "goal": "checkmate",

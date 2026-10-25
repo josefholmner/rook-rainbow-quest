@@ -1,4 +1,4 @@
-# World 2 — Checkmate Castle, Rook Rainbow Quest v0.9.0
+# World 2 — Checkmate Castle, Rook Rainbow Quest v0.10.0
 
 Twenty separate checkmate levels follow the original capture world. The first two opponents have only a king; the child has two rooks and an extra queen in each of those lessons. Enemy teams then grow from one pawn to six pieces including the king; all twenty boards are 6×6, giving the king and attacking pieces room to maneuver. Players always start with at least five points of material advantage (queen 9, rook 5, bishop/knight 3, pawn 1; the opposing king has no material score). No player king is used.
 
@@ -14,10 +14,10 @@ The move counts below are tested winning examples against the exact deterministi
 |---|---|---|---|---|
 | 1 | [Hello, King!](../levels/21-mate-01.md) | 6×6 | king d4 | 2 |
 | 2 | [Two Rooks Take Turns](../levels/22-mate-02.md) | 6×6 | king d4 | 3 |
-| 3 | [The Pawn Guard](../levels/23-mate-03.md) | 6×6 | king d4, pawn c3 | 2 |
-| 4 | [The Little Gate](../levels/24-mate-04.md) | 6×6 | king d4, pawn c2 | 2 |
-| 5 | [Queen and Rook](../levels/25-mate-05.md) | 6×6 | king d4, pawn a3 | 2 |
-| 6 | [A Knight Visits](../levels/26-mate-06.md) | 6×6 | king d4, pawn c3, knight a4 | 2 |
+| 3 | [The Pawn Guard](../levels/23-mate-03.md) | 6×6 | king d4, pawn c3 | 3 |
+| 4 | [The Little Gate](../levels/24-mate-04.md) | 6×6 | king d4, pawn c2 | 3 |
+| 5 | [Queen and Rook](../levels/25-mate-05.md) | 6×6 | king d4, pawn a3 | 3 |
+| 6 | [A Knight Visits](../levels/26-mate-06.md) | 6×6 | king d4, pawn c3, knight a4 | 3 |
 | 7 | [The Bishop Bridge](../levels/27-mate-07.md) | 6×6 | king e5, pawn d4, bishop c4 | 3 |
 | 8 | [Two Pawn Guards](../levels/28-mate-08.md) | 6×6 | king e5, pawn d4, bishop c4, pawn c3 | 3 |
 | 9 | [Open the File](../levels/29-mate-09.md) | 6×6 | king e5, pawn d4, bishop c4, pawn c3 | 3 |
@@ -25,13 +25,19 @@ The move counts below are tested winning examples against the exact deterministi
 | 11 | [Watch the Knight](../levels/31-mate-11.md) | 6×6 | king e5, pawn d4, knight c4, pawn c3 | 3 |
 | 12 | [Meet the Bishop](../levels/32-mate-12.md) | 6×6 | king e5, pawn d4, bishop c4, pawn c3 | 3 |
 | 13 | [The Guarded Corner](../levels/33-mate-13.md) | 6×6 | king f6, pawn e5, pawn d5, knight c4 | 3 |
-| 14 | [Three Pawn Steps](../levels/34-mate-14.md) | 6×6 | king f6, pawn e5, pawn d5, knight c4, pawn b5 | 3 |
+| 14 | [Three Pawn Steps](../levels/34-mate-14.md) | 6×6 | king f6, pawn e5, pawn d5, knight c4, pawn b5 | 2 |
 | 15 | [The Royal Rook](../levels/35-mate-15.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5 | 4 |
-| 16 | [The Queen Team](../levels/36-mate-16.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5 | 3 |
-| 17 | [Clear the Diagonal](../levels/37-mate-17.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5 | 4 |
-| 18 | [Castle Helpers](../levels/38-mate-18.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5, knight f4 | 5 |
-| 19 | [The Royal Puzzle](../levels/39-mate-19.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5, bishop f4 | 4 |
+| 16 | [The Queen Team](../levels/36-mate-16.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5 | 2 |
+| 17 | [Clear the Diagonal](../levels/37-mate-17.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5 | 3 |
+| 18 | [Castle Helpers](../levels/38-mate-18.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5, knight f4 | 3 |
+| 19 | [The Royal Puzzle](../levels/39-mate-19.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5, bishop f4 | 2 |
 | 20 | [Checkmate Celebration](../levels/40-mate-20.md) | 6×6 | king f6, pawn e5, pawn d5, rook c5, pawn b5, knight f4 | 4 |
+
+## Formation variety in v0.10.0
+
+Levels 3–6 have four different friendly teams: queen/two rooks/pawn; queen/rook/bishop/pawn; queen/rook/knight/pawn; and queen/two rooks/two pawns. Every friendly starting formation from level 3 onward is distinct. Later lessons shift a supporting bishop, knight or pawn rather than introducing a sudden difficulty jump. The first two queen-assisted lessons are unchanged. Winning routes were regenerated against the actual opponent.
+
+Result banners are translucent and sit below the board. On stalemate the child can inspect every square and read why no legal reply exists.
 
 ## Tuning a level
 

@@ -1,6 +1,6 @@
 # World 3, level 13: The Royal Guard
 
-Version: 0.8.0. Stable ID: `chess-13`.
+Version: 0.10.0. Stable ID: `chess-13`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Keep helpers near your king while finding active moves.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, bishop f1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2, pawn f2, pawn g2, pawn h2. Opponent: king e8, bishop c8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7, pawn g7, pawn h7.
+8 × 8. Player: king e1, bishop e3, bishop d3, pawn a2, pawn b2, pawn c2, pawn d4, pawn e4, pawn f2, pawn g2, pawn h2. Opponent: king e8, bishop e6, pawn a7, pawn b7, pawn c7, pawn d7, pawn e5, pawn f7, pawn g7, pawn h7.
 
 Initial material advantage: 3 points.
+
+Distinct starting formation: c1 → e3, f1 → d3, d2 → d4, e2 → e4. Enemy development: c8 → e6, e7 → e5. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 
@@ -20,7 +22,7 @@ Opponent: safety 2, with an occasional second-choice legal move every 7 replies.
 
 ## Tested opening
 
-3 tested player moves against the configured opponent: a2 → a4, c2 → c4, e2 → e4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
+3 tested player moves against the configured opponent: d4 → e5, e3 → a7, a7 → d4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
 
 ## Icon and future tweaks
 

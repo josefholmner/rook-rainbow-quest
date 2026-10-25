@@ -12,6 +12,10 @@ pub enum Language {
 
 pub const TEXTS: &[(&str, &str)] = &[
     (
+        "The king is not in check, but the opponent has no legal moves.",
+        "Kungen står inte i schack, men motståndaren har inga tillåtna drag.",
+    ),
+    (
         "Your queen helps the rooks cover the king's escapes.",
         "Din dam hjälper tornen att stänga kungens flyktvägar.",
     ),

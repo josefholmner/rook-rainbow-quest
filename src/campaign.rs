@@ -179,6 +179,38 @@ mod tests {
         }
     }
     #[test]
+    fn later_worlds_offer_distinct_friendly_formations() {
+        let levels = levels();
+        for range in [22..40, 40..60] {
+            let mut formations = std::collections::HashSet::new();
+            for l in &levels[range] {
+                let mut pieces: Vec<_> = std::iter::once(&l.player)
+                    .chain(&l.allies)
+                    .map(|p| (&p.piece, &p.square))
+                    .collect();
+                pieces.sort();
+                assert!(
+                    formations.insert(pieces),
+                    "{} repeats a friendly formation",
+                    l.id
+                );
+            }
+        }
+        let mut early_teams = std::collections::HashSet::new();
+        for l in &levels[22..26] {
+            let mut army: Vec<_> = std::iter::once(&l.player)
+                .chain(&l.allies)
+                .map(|p| p.piece.as_str())
+                .collect();
+            assert!(army.contains(&"pawn"), "{} needs a pawn helper", l.id);
+            army.sort();
+            assert!(
+                early_teams.insert(army),
+                "Early castle lessons need different supporting teams"
+            );
+        }
+    }
+    #[test]
     fn practice_shortest_routes_require_one_then_two_extra_moves_for_every_piece() {
         for (i, l) in levels().into_iter().take(10).enumerate() {
             let extra = i % 2 + 1;

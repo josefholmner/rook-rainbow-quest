@@ -18,7 +18,7 @@
     },
     {
       "piece": "pawn",
-      "square": "a2"
+      "square": "b3"
     }
   ],
   "board": {
@@ -34,12 +34,12 @@
       "to": "c4"
     },
     {
-      "from": "d1",
-      "to": "a4"
+      "from": "b1",
+      "to": "f5"
     },
     {
-      "from": "b1",
-      "to": "b5"
+      "from": "a1",
+      "to": "a6"
     }
   ],
   "goal": "checkmate",

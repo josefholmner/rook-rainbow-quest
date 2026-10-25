@@ -1,5 +1,13 @@
 # Releases
 
+## 0.10.0 — Room to learn
+
+- Translucent result banners sit below the board for draws, retries, wins and world completion. The final position remains visible; promotion choices also use a translucent card. Stalemate explains that the king is not in check and the opponent has no legal moves.
+- Varied World 2 levels 3–20 with pawn helpers, different supporting pieces and distinct formations.
+- Reviewed all World 3 positions and varied levels 6–19 with developed pieces and pawn formations, retaining army growth, material advantages, the first five special-rule lessons and the full-board finale.
+- Updated individual level descriptions, verified routes/openings, and added visibility and formation regressions. World 1 level files remain unchanged.
+
+
 ## 0.9.0 — Rook Rainbow Quest
 
 - Created an independent Rook Rainbow Quest repository from the complete v0.8.4 game. The original repository and its Git history stay untouched. Sixty level IDs, board layouts, artwork, mechanics and unlimited retries are preserved.

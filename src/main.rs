@@ -1572,34 +1572,36 @@ impl App {
             && self.won_at.is_none()
             && self.failed_at.is_none()
             && self.promotion_to.is_none();
-        if self.button(
-            10,
-            Rect::new(370., 692., 160., 56.),
-            "Hint",
-            GOLD,
-            active && self.motion.is_none() && self.game.player_turn(),
-        ) {
-            if let Some(m) = self.game.hint() {
-                if !self.game.level.is_match() {
-                    self.game.select(m.from);
-                    self.selected = true;
+        if self.won_at.is_none() && self.failed_at.is_none() {
+            if self.button(
+                10,
+                Rect::new(370., 692., 160., 56.),
+                "Hint",
+                GOLD,
+                active && self.motion.is_none() && self.game.player_turn(),
+            ) {
+                if let Some(m) = self.game.hint() {
+                    if !self.game.level.is_match() {
+                        self.game.select(m.from);
+                        self.selected = true;
+                    }
+                    self.hint = Some((m, get_time() + 5.));
+                    self.sound(1);
                 }
-                self.hint = Some((m, get_time() + 5.));
-                self.sound(1);
             }
-        }
-        if self.button(
-            12,
-            Rect::new(560., 692., 160., 56.),
-            "Try again",
-            CORAL,
-            active,
-        ) {
-            self.restart();
-        }
-        if self.button(13, Rect::new(750., 692., 160., 56.), "Map", BLUE, active) {
-            self.screen = Screen::Map;
-            self.focus = None;
+            if self.button(
+                12,
+                Rect::new(560., 692., 160., 56.),
+                "Try again",
+                CORAL,
+                active,
+            ) {
+                self.restart();
+            }
+            if self.button(13, Rect::new(750., 692., 160., 56.), "Map", BLUE, active) {
+                self.screen = Screen::Map;
+                self.focus = None;
+            }
         }
         if self.clicked
             && active
@@ -1629,8 +1631,12 @@ impl App {
     }
     fn promotion_dialog(&mut self, to: Square) {
         flush_rendered();
-        draw_rectangle(0., 0., W, H, Color::new(0.12, 0.19, 0.24, 0.55));
-        rounded(Rect::new(280., 220., 720., 350.), 30., CREAM);
+        draw_rectangle(0., 0., W, H, Color::new(0.12, 0.19, 0.24, 0.10));
+        rounded(
+            Rect::new(280., 220., 720., 350.),
+            30.,
+            Color { a: 0.82, ..CREAM },
+        );
         text_center("Choose your new piece", 640., 285., 35., INK);
         self.interactive.clear();
         for (i, (piece, label)) in [
@@ -1666,8 +1672,7 @@ impl App {
     }
     fn failure(&mut self) {
         flush_rendered();
-        draw_rectangle(0., 0., W, H, Color::new(0.12, 0.19, 0.24, 0.43));
-        rounded(Rect::new(350., 225., 580., 350.), 30., CREAM);
+        result_backdrop();
         let draw = self.game.battle.as_ref().is_some_and(|b| {
             b.outcome == rook_rainbow_quest::battle::Outcome::Stuck
                 && (b.standard.is_some() || b.draw_reason.is_some())
@@ -1676,7 +1681,7 @@ impl App {
             && self.game.battle.as_ref().is_some_and(|b| {
                 b.outcome == rook_rainbow_quest::battle::Outcome::Stuck && b.turn == Side::Opponent
             });
-        text_center(
+        text(
             if draw {
                 "Draw — try again!"
             } else if self.game.level.is_standard() {
@@ -1686,40 +1691,40 @@ impl App {
             } else {
                 "Good try!"
             },
-            640.,
-            303.,
-            if draw || stalemate || self.game.level.is_standard() {
-                35.
-            } else {
-                48.
-            },
+            74.,
+            716.,
+            31.,
             INK,
         );
-        text_center(
-            if draw {
-                self.game
-                    .battle
-                    .as_ref()
-                    .and_then(|b| {
-                        b.draw_reason
-                            .or_else(|| b.standard.as_ref().and_then(|s| s.draw_reason))
-                    })
-                    .unwrap_or("Start this level again.")
-            } else if stalemate {
-                "The king needs a safe move."
+        let reason = if draw {
+            let reason = self
+                .game
+                .battle
+                .as_ref()
+                .and_then(|b| {
+                    b.draw_reason
+                        .or_else(|| b.standard.as_ref().and_then(|s| s.draw_reason))
+                })
+                .unwrap_or("Start this level again.");
+            if reason == "Stalemate" {
+                STALEMATE_EXPLANATION
             } else {
-                "Start this level again."
-            },
-            640.,
-            358.,
-            27.,
-            INK,
-        );
-        text_center("Your stars are safe.", 640., 400., 25., INK);
+                reason
+            }
+        } else if stalemate {
+            STALEMATE_EXPLANATION
+        } else {
+            "Start this level again."
+        };
+        result_detail(&format!(
+            "{}  {}",
+            localized(reason),
+            localized("Your stars are safe.")
+        ));
         self.interactive.clear();
         if self.button(
             12,
-            Rect::new(395., 463., 225., 66.),
+            Rect::new(735., 705., 225., 60.),
             "Try again",
             CORAL,
             !self.settings,
@@ -1728,7 +1733,7 @@ impl App {
         }
         if self.button(
             13,
-            Rect::new(660., 463., 225., 66.),
+            Rect::new(990., 705., 225., 60.),
             "Back to map",
             BLUE,
             !self.settings,
@@ -1743,41 +1748,34 @@ impl App {
             return;
         }
         flush_rendered();
-        draw_rectangle(0., 0., W, H, Color::new(0.12, 0.19, 0.24, 0.47));
-        rounded(Rect::new(350., 185., 580., 440.), 32., CREAM);
+        result_backdrop();
         let bounce = if self.save.reduced_motion {
             0.
         } else {
             (t * 3.).sin() * 5.
         };
-        star(vec2(640., 285. + bounce), 62., GOLD);
-        text_center(
+        star(vec2(600., 716. + bounce), 24., GOLD);
+        text(
             if self.game.level.is_royal() {
                 "Checkmate!"
             } else {
                 "You did it!"
             },
-            640.,
-            405.,
-            58.,
+            74.,
+            716.,
+            31.,
             INK,
         );
-        text_center(
-            if self.map_index + 1 < self.world_range().end {
-                "A new stop is ready on your path!"
-            } else {
-                "You finished this world!"
-            },
-            640.,
-            450.,
-            26.,
-            INK,
-        );
+        result_detail(if self.map_index + 1 < self.world_range().end {
+            "A new stop is ready on your path!"
+        } else {
+            "You finished this world!"
+        });
         self.interactive.clear();
         let enabled = !self.settings;
         if self.button(
             30,
-            Rect::new(380., 513., 160., 66.),
+            Rect::new(645., 705., 180., 60.),
             "Play again",
             CORAL,
             enabled,
@@ -1786,7 +1784,7 @@ impl App {
         }
         if self.button(
             31,
-            Rect::new(560., 513., 160., 66.),
+            Rect::new(840., 705., 180., 60.),
             "Back to map",
             BLUE,
             enabled,
@@ -1796,7 +1794,7 @@ impl App {
         }
         if self.button(
             32,
-            Rect::new(740., 513., 160., 66.),
+            Rect::new(1035., 705., 180., 60.),
             "Next level",
             GOLD,
             enabled && self.map_index + 1 < self.world_range().end,
@@ -1810,21 +1808,23 @@ impl App {
     }
     fn world_victory(&mut self, world: usize, t: f32) {
         flush_rendered();
-        draw_rectangle(0., 0., W, H, Color::new(0.12, 0.19, 0.24, 0.55));
-        rounded(Rect::new(260., 165., 760., 490.), 32., CREAM);
+        result_backdrop();
         let bounce = if self.save.reduced_motion {
             0.
         } else {
             (t * 3.).sin() * 5.
         };
-        star(vec2(640., 270. + bounce), 62., GOLD);
-        text_center("World complete!", 640., 385., 48., INK);
-        text_center("You completed", 640., 435., 28., INK);
-        text_center(&self.worlds[world].title, 640., 488., 38., CORAL);
+        star(vec2(600., 716. + bounce), 24., GOLD);
+        text("World complete!", 74., 716., 31., INK);
+        result_detail(&format!(
+            "{} {}",
+            localized("You completed"),
+            localized(&self.worlds[world].title)
+        ));
         self.interactive.clear();
         if self.button(
             33,
-            Rect::new(360., 550., 560., 70.),
+            Rect::new(655., 705., 560., 60.),
             "Back to Adventure Galaxy",
             BLUE,
             !self.settings,
@@ -2183,6 +2183,37 @@ fn center(s: Square, l: &Level) -> Vec2 {
         180. + (l.board.height as f32 - s.y as f32 - 0.5) * cell,
     )
 }
+// Keep result controls below even the largest board, so children can study the final position.
+const STALEMATE_EXPLANATION: &str =
+    "The king is not in check, but the opponent has no legal moves.";
+const RESULT_PANEL: Rect = Rect::new(36., 680., 1208., 106.);
+fn result_backdrop() {
+    draw_rectangle(0., 0., W, H, Color::new(0.12, 0.19, 0.24, 0.08));
+    rounded(RESULT_PANEL, 26., Color { a: 0.86, ..CREAM });
+}
+fn result_detail(message: &str) {
+    let message = localized(message);
+    let mut line = String::new();
+    let mut y = 746.;
+    for word in message.split_whitespace() {
+        let next = if line.is_empty() {
+            word.to_owned()
+        } else {
+            format!("{line} {word}")
+        };
+        if text_width(&next, 22.) > 550. && !line.is_empty() {
+            text_raw(&line, 74., y, 22., INK);
+            y += 25.;
+            line.clear();
+        }
+        if !line.is_empty() {
+            line.push(' ');
+        }
+        line.push_str(word);
+    }
+    text_raw(&line, 74., y, 22., INK);
+}
+
 fn rounded(r: Rect, radius: f32, c: Color) {
     let z = radius.min(r.w / 2.).min(r.h / 2.).max(0.);
     let steps = (curve_segments(z, RENDER_SCALE.with(std::cell::Cell::get)) as usize).div_ceil(4);
@@ -2910,7 +2941,7 @@ async fn main() {
                     assert!(campaign::unlocked(&app.levels, &app.save, 6));
                 }
                 28 => {
-                    app.pointer = vec2(500., 490.);
+                    app.pointer = vec2(845., 735.);
                     app.clicked = true;
                 }
                 32 => {
@@ -3101,6 +3132,7 @@ async fn main() {
                     assert!(!app.game.battle.as_ref().unwrap().in_check());
                     assert_eq!(app.save.profiles[0].len(), 20);
                 }
+                22 => app.save.language = Language::English,
                 24 => app.activated = Some(12),
                 28 => {
                     assert!(app.failed_at.is_none());
@@ -3251,11 +3283,13 @@ async fn main() {
                 get_screen_data().export_png(dir.join("worlds-unlocked.png").to_str().unwrap());
             }
         }
-        if mate_test && (frame == 20 || frame == 40) {
+        if mate_test && (frame == 20 || frame == 23 || frame == 40) {
             if let Some(dir) = &screenshot_dir {
                 get_screen_data().export_png(
                     dir.join(if frame == 20 {
                         "stalemate-retry.png"
+                    } else if frame == 23 {
+                        "stalemate-retry-en.png"
                     } else {
                         "checkmate-win.png"
                     })
@@ -3506,7 +3540,7 @@ async fn main() {
                                     .export_png(dir.join("native-4k-render.png").to_str().unwrap());
                             }
                             set_fullscreen(false);
-                            println!("Campaign passed: 60 levels across three worlds; forty original winning routes and twenty legal regular-chess openings, world traversal, completion popups, piece selection, unlocking, castle finale and 4K rendering.");
+                            println!("Campaign passed: 60 levels across three worlds; forty winning routes and twenty legal regular-chess openings, world traversal, completion popups, piece selection, unlocking, castle finale and 4K rendering.");
                             break;
                         }
                     }
@@ -3562,6 +3596,15 @@ async fn main() {
 mod render_tests {
     use super::*;
     use macroquad::camera::Camera;
+    #[test]
+    fn result_banner_leaves_every_board_square_uncovered() {
+        for size in [4., 5., 6., 8.] {
+            let cell = (480_f32 / size).min(120.);
+            let board = Rect::new(640. - size * cell / 2., 180., size * cell, size * cell);
+            assert!(!RESULT_PANEL.overlaps(&board));
+            assert!(RESULT_PANEL.bottom() <= H);
+        }
+    }
     #[test]
     fn native_settings_camera_keeps_top_left_and_bottom_right_upright() {
         let camera = native_camera((96, 0, 1728, 1080));

@@ -6,7 +6,7 @@
     },
     {
       "piece": "knight",
-      "square": "b1"
+      "square": "c3"
     },
     {
       "piece": "pawn",
@@ -18,7 +18,7 @@
     },
     {
       "piece": "pawn",
-      "square": "c2"
+      "square": "c4"
     }
   ],
   "board": {
@@ -35,8 +35,8 @@
       "to": "a4"
     },
     {
-      "from": "c2",
-      "to": "c4"
+      "from": "c1",
+      "to": "d2"
     },
     {
       "from": "a4",

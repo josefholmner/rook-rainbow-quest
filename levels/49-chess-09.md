@@ -1,6 +1,6 @@
 # World 3, level 9: Trade and Protect
 
-Version: 0.8.0. Stable ID: `chess-09`.
+Version: 0.10.0. Stable ID: `chess-09`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Trade when it helps your team, and guard the piece you move.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2, pawn f2. Opponent: king e8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7.
+8 × 8. Player: king e1, bishop e3, pawn a2, pawn b2, pawn c2, pawn d4, pawn e4, pawn f2. Opponent: king e8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7.
 
 Initial material advantage: 4 points.
+
+Distinct starting formation: c1 → e3, d2 → d4, e2 → e4. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 

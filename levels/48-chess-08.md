@@ -1,6 +1,6 @@
 # World 3, level 8: Keep Your King Safe
 
-Version: 0.8.0. Stable ID: `chess-08`.
+Version: 0.10.0. Stable ID: `chess-08`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Look for checks before choosing your move. You must always protect your own king
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2. Opponent: king e8, pawn a7, pawn b7, pawn c7, pawn d7.
+8 × 8. Player: king e1, bishop f1, pawn a2, pawn b2, pawn c2, pawn d3, pawn e3. Opponent: king e8, pawn a7, pawn b7, pawn c7, pawn d7.
 
 Initial material advantage: 4 points.
+
+Distinct starting formation: c1 → f1, d2 → d3, e2 → e3. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 

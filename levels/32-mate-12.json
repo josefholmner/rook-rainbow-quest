@@ -18,7 +18,7 @@
     },
     {
       "piece": "pawn",
-      "square": "a2"
+      "square": "b2"
     }
   ],
   "board": {
@@ -34,8 +34,8 @@
       "to": "f3"
     },
     {
-      "from": "a1",
-      "to": "a2"
+      "from": "a3",
+      "to": "c4"
     },
     {
       "from": "b1",

@@ -1,21 +1,20 @@
-# Rook Rainbow Quest v0.9.0 validation — 2026-10-25
+# Rook Rainbow Quest v0.10.0 validation — 2026-10-25
 
-- The new independent repository is C:\Users\Admin\git\rook-rainbow-quest, retaining its existing origin and initial commit. No original Git metadata, old releases, caches or toolchains were copied. No commit or push was made.
-- Verified all 190 original core files against the pre-copy SHA-256 baseline. The original chessKids repository's HEAD is unchanged and its working tree is clean. All sixty new level JSON files match the original game byte for byte.
-- Renamed Rust package/crate, game and launcher filenames, Windows icon/version resources, window title, both-language menu/map branding, package outputs, CI artifact names, test prefixes and build-tool override. A source/script/config scan found no old product naming. Historical changelog/concept provenance and migration references are explicitly labeled.
-- Added a regression confirming progress is isolated under RookRainbowQuest/progress.json. The predecessor's family save is not read or overwritten automatically; optional reuse is documented. Stable level/world IDs and save schema remain unchanged.
-- Formatting, 90 library tests, one renderer test and one launcher test passed (92 total), plus clippy with warnings denied and four packaging regressions.
-- Final native campaign passed sixty boards: forty complete winning routes and twenty regular-chess opening guides. All eight game regression cases and three launcher handoff scenarios passed. This includes World 1 level 7's optional promotion detour and Worlds 2/3's distinct backgrounds. Tests use isolated saves.
-- Visually inspected the renamed main menu in the running release. Native launcher metadata/icon tests passed. Original artwork, icons, fonts, mechanics and 60 level definitions are retained.
-- Git LFS attribute/content audit passed for all 17 binary files, including artwork, concept image, fonts, raw RGBA textures, icons, game, both launcher copies and versioned ZIP. Source and license text remain normal Git files. The audit also detects unknown binary types rather than relying only on filename extensions.
-- After the user staged the files with their own Git client, the strict read-only LFS audit passed for all 17 binary files: every staged pointer's SHA-256 and size matches its actual content. The LFS pre-push hook is present. Git management remains with the user. prepare-check-in.ps1 is an optional helper; CI independently checks out LFS content and enforces the pointer audit.
-- Game and launcher passed pre/post Microsoft Defender scans and matching real-time detection checks. Published game, launcher and ZIP also explicitly scanned with no threats. Both ZIP executables match the published files. This is local validation, not a Microsoft analysis verdict; no security settings were changed.
-- The versioned release folder, Windows ZIP, SHA-256 manifest, licenses and stable native launcher are eligible for check-in. Build/play/LFS instructions are in README.md, PLAY.txt, docs/BUILD.md, docs/LAUNCHER.md and docs/LFS.md. No remote CI run or upload is claimed.
+- All 94 Rust tests passed (91 library, two rendering/layout, one launcher). Formatting and clippy with warnings denied passed. All four packaging regressions passed.
+- Added regressions ensure every board size remains unobstructed by result banners, friendly formations differ across World 2 levels 3–20 and all twenty World 3 levels, and the four early castle teams have distinct compositions with pawn helpers.
+- All twenty World 2 winning routes were replayed against the real deterministic opponent. Changed positions have regenerated routes. All twenty World 3 guides remain legal three-player-move openings; these are not proofs of forced wins. The existing tests still verify army growth, material advantage, special rules, and the full standard finale.
+- The optimized native campaign passed all sixty levels: forty winning routes and twenty regular-chess opening tours. All eight native regressions passed: dead positions, regular chess/promotion, checkmate/stalemate, main menu, retry, settings and both exit modes. Tests use isolated saves.
+- Visually checked Swedish and English stalemate banners, victory and world completion, and a revised World 3 formation. Every board square stays visible; old underlying controls are hidden. Draw explanations also cover World 3 stalemate. Promotion retains a translucent chooser and settings retains its clear readable panel.
+- Verified SHA-256 for all forty World 1 JSON/description files against the pre-change baseline: unchanged. World 2 retains its first two queen-assisted lesson designs; World 3 retains its first five special-rule designs, material progression and full-board finale. All stable IDs, saves and rules are retained.
+- Updated each reviewed level description and the World 2/3 design documentation with exact armies, formation notes and verified routes/openings.
+- Game and native launcher passed pre/post Microsoft Defender scans and native execution checks. Launcher tests passed GUI subsystem, icon/version, adjacent release folder, extracted layout and Unicode/spaced path handoff. No security configuration changed.
+- ZIP executables match the published game/launcher; all three SHA-256 manifest entries match. The current release folder, launcher, ZIP and manifest are prepared in dist. The former v0.9.0 package is outside dist under ignored target/superseded-release-files, so the prepared release files contain the latest version only.
+- Existing LFS policy covers all binary assets and new release files. Git staging, configuration, commits and pushing remain with the user; this work changed files only.
 
-Game SHA-256: F3B9AF7EB45C45F900BA2E106748222F458DC89C094200AF994D026A68594014
+Game SHA-256: 1516ACADDC1E32CC758BF35477DD1A7F6915F0A8F0CC55602BA01CD15DA50775
 
-Launcher SHA-256: E5E72B1A34808087DD74CD03896C216749A939BEF89700FFF658567B323ED70E
+Launcher SHA-256: 7721C50D4941D4A2529D7D8F4FCF31ADBB0C03615955EFFA0BD9262E68356850
 
-ZIP SHA-256: C1BDEF18FEDF5D507B94C8DD052E90FD13D24F7CFEA32487115366A370666BD7
+ZIP SHA-256: B0B79667AF5B833C4BD4D9F1833253F05CA82A62A2BABD71A6E569E8AA960EAF
 
-Raw evidence: target/package-staging/8a9ff18c46db4e389c01ff79fa2c0592/validation/ and launcher-validation/ (ignored). Original-file baseline and presentation copies are retained in the task's outputs/Rook-Rainbow-Quest folder, outside both repositories.
+Raw native evidence: target/package-staging/9ee8c3057faa4c5d8ea560362a1a0dc1/validation/ and launcher-validation/ (ignored). Preview images and World 1 baseline: C:/Users/Admin/Documents/Codex/2026-10-23/i/outputs/Rook-Rainbow-Quest/v0.10.0/.

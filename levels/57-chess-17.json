@@ -10,11 +10,11 @@
     },
     {
       "piece": "bishop",
-      "square": "f1"
+      "square": "e2"
     },
     {
       "piece": "knight",
-      "square": "b1"
+      "square": "c3"
     },
     {
       "piece": "knight",
@@ -34,11 +34,11 @@
     },
     {
       "piece": "pawn",
-      "square": "d2"
+      "square": "d4"
     },
     {
       "piece": "pawn",
-      "square": "e2"
+      "square": "e3"
     },
     {
       "piece": "pawn",
@@ -67,12 +67,12 @@
       "to": "a4"
     },
     {
-      "from": "c2",
-      "to": "c4"
+      "from": "f2",
+      "to": "f4"
     },
     {
-      "from": "e2",
-      "to": "e4"
+      "from": "h2",
+      "to": "h4"
     }
   ],
   "finalBoss": false,
@@ -134,7 +134,7 @@
     },
     {
       "piece": "pawn",
-      "square": "a7"
+      "square": "a6"
     },
     {
       "piece": "pawn",

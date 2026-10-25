@@ -1,6 +1,6 @@
 # World 3, level 16: A Fair Fight
 
-Version: 0.8.0. Stable ID: `chess-16`.
+Version: 0.10.0. Stable ID: `chess-16`.
 
 ## Teaching goal
 
@@ -8,9 +8,11 @@ Both teams have plenty of helpers now. Look before you capture.
 
 ## Board and pieces
 
-8 × 8. Player: king e1, bishop c1, bishop f1, knight b1, knight g1, pawn a2, pawn b2, pawn c2, pawn d2, pawn e2, pawn f2, pawn g2, pawn h2. Opponent: king e8, bishop c8, bishop f8, knight b8, pawn a7, pawn b7, pawn c7, pawn d7, pawn e7, pawn f7, pawn g7, pawn h7.
+8 × 8. Player: king e1, bishop c1, bishop f1, knight c3, knight f3, pawn a2, pawn b2, pawn c2, pawn d4, pawn e3, pawn f2, pawn g2, pawn h2. Opponent: king e8, bishop c8, bishop f8, knight c6, pawn a7, pawn b7, pawn c5, pawn d7, pawn e7, pawn f7, pawn g7, pawn h7.
 
 Initial material advantage: 3 points.
+
+Distinct starting formation: b1 → c3, g1 → f3, d2 → d4, e2 → e3. Enemy development: b8 → c6, c7 → c5. Piece counts and material advantage are unchanged.
 
 ## Rules and tuning
 
@@ -20,7 +22,7 @@ Opponent: safety 3, with an occasional second-choice legal move every 8 replies.
 
 ## Tested opening
 
-3 tested player moves against the configured opponent: a2 → a4, c2 → c4, e2 → e4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
+3 tested player moves against the configured opponent: d4 → c5, f1 → d3, a2 → a4. It is an opening example, not an automatically completed level or a claim of a forced win. The child must play to checkmate to earn a star.
 
 ## Icon and future tweaks
 

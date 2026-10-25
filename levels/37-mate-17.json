@@ -18,7 +18,7 @@
     },
     {
       "piece": "pawn",
-      "square": "a2"
+      "square": "b2"
     },
     {
       "piece": "pawn",
@@ -34,20 +34,16 @@
   "exampleSolution": [],
   "exampleTurns": [
     {
-      "from": "b1",
-      "to": "b4"
-    },
-    {
       "from": "d1",
       "to": "f3"
     },
     {
-      "from": "f3",
-      "to": "d5"
-    },
-    {
       "from": "c1",
       "to": "f1"
+    },
+    {
+      "from": "f3",
+      "to": "d5"
     }
   ],
   "goal": "checkmate",
