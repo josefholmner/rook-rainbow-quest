@@ -1,0 +1,55 @@
+# Windows dependency license inventory
+
+- adler2 2.0.1: 0BSD OR MIT OR Apache-2.0
+- allocator-api2 0.2.21: MIT OR Apache-2.0
+- audrey 0.3.0: MIT OR Apache-2.0
+- autocfg 1.5.1: Apache-2.0 OR MIT
+- bitflags 1.3.2: MIT/Apache-2.0
+- bytemuck 1.25.2: Zlib OR Apache-2.0 OR MIT
+- byteorder 1.5.0: Unlicense OR MIT
+- cfg-if 1.0.5: MIT OR Apache-2.0
+- color_quant 1.1.0: MIT
+- core_maths 0.1.1: MIT
+- cozy-chess 0.3.4: MIT
+- cozy-chess-types 0.2.2: MIT
+- crc32fast 1.5.3: MIT OR Apache-2.0
+- dasp_frame 0.11.0: MIT OR Apache-2.0
+- dasp_sample 0.11.0: MIT OR Apache-2.0
+- equivalent 1.0.3: Apache-2.0 OR MIT
+- fdeflate 0.3.7: MIT OR Apache-2.0
+- flate2 1.1.10: MIT OR Apache-2.0
+- foldhash 0.1.5: Zlib
+- fontdue 0.9.5: MIT OR Apache-2.0 OR Zlib
+- glam 0.27.0: MIT OR Apache-2.0
+- hashbrown 0.15.5: MIT OR Apache-2.0
+- hound 3.5.1: Apache-2.0
+- image 0.24.9: MIT OR Apache-2.0
+- itoa 1.0.18: MIT OR Apache-2.0
+- lewton 0.9.4: MIT/Apache-2.0
+- libm 0.2.16: MIT
+- macroquad 0.4.14: MIT OR Apache-2.0
+- macroquad_macro 0.1.8: MIT/Apache-2.0
+- maybe-uninit 2.0.0: Apache-2.0 OR MIT
+- memchr 2.8.3: Unlicense OR MIT
+- miniquad 0.4.8: MIT OR Apache-2.0
+- miniz_oxide 0.8.9: MIT OR Zlib OR Apache-2.0
+- miniz_oxide 0.9.1: MIT OR Zlib OR Apache-2.0
+- num-traits 0.2.19: MIT OR Apache-2.0
+- ogg 0.7.1: BSD-3-Clause
+- png 0.17.16: MIT OR Apache-2.0
+- proc-macro2 1.0.107: MIT OR Apache-2.0
+- quad-rand 0.2.3: MIT
+- quad-snd 0.2.8: MIT/Apache-2.0
+- quote 1.0.47: MIT OR Apache-2.0
+- serde 1.0.229: MIT OR Apache-2.0
+- serde_core 1.0.229: MIT OR Apache-2.0
+- serde_derive 1.0.229: MIT OR Apache-2.0
+- serde_json 1.0.154: MIT OR Apache-2.0
+- simd-adler32 0.3.10: MIT
+- smallvec 0.6.14: MIT/Apache-2.0
+- syn 3.0.9: MIT OR Apache-2.0
+- ttf-parser 0.25.1: MIT OR Apache-2.0
+- unicode-ident 1.0.27: (MIT OR Apache-2.0) AND Unicode-3.0
+- winapi 0.3.9: MIT/Apache-2.0
+- zlib-rs 0.6.8: Zlib
+- zmij 1.0.23: MIT

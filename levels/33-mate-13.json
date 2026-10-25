@@ -1,0 +1,103 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "rook",
+      "square": "c1"
+    },
+    {
+      "piece": "bishop",
+      "square": "d1"
+    },
+    {
+      "piece": "knight",
+      "square": "b2"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    },
+    {
+      "piece": "pawn",
+      "square": "c2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "b2",
+      "to": "d3"
+    },
+    {
+      "from": "b1",
+      "to": "b2"
+    },
+    {
+      "from": "b2",
+      "to": "e5"
+    }
+  ],
+  "goal": "checkmate",
+  "icon": {
+    "badge": 1,
+    "opponent": "king",
+    "piece": "queen"
+  },
+  "id": "mate-13",
+  "initiallySelected": false,
+  "intro": "Cover the corner without trapping an unchecked king.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Give check and cover every escape. Never capture the king.",
+  "nextLevelId": "mate-14",
+  "opponent": {
+    "braveAfter": 3,
+    "overlookEvery": 5,
+    "safety": 2
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "b1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "checkmate",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "f6"
+    },
+    {
+      "piece": "pawn",
+      "square": "e5"
+    },
+    {
+      "piece": "pawn",
+      "square": "d5"
+    },
+    {
+      "piece": "knight",
+      "square": "c4"
+    }
+  ],
+  "title": "The Guarded Corner",
+  "tutorialPath": [],
+  "world": "Checkmate Castle"
+}

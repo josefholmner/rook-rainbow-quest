@@ -1,0 +1,102 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "f1"
+    },
+    {
+      "piece": "pawn",
+      "square": "b2"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    },
+    {
+      "piece": "pawn",
+      "square": "c2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "c2",
+      "to": "c3"
+    },
+    {
+      "from": "c1",
+      "to": "a1"
+    },
+    {
+      "from": "a1",
+      "to": "a6"
+    },
+    {
+      "from": "a6",
+      "to": "c4"
+    },
+    {
+      "from": "f1",
+      "to": "b1"
+    },
+    {
+      "from": "c4",
+      "to": "d4"
+    }
+  ],
+  "goal": "capture-all-targets",
+  "icon": {
+    "badge": 1,
+    "opponent": "rook",
+    "piece": "queen"
+  },
+  "id": "match-09",
+  "initiallySelected": false,
+  "intro": "Your queen and rook still have the advantage; check the opposing knight and bishop before choosing a capture.",
+  "movementReminder": "Queens move straight or diagonally.",
+  "nextLevelId": "match-10",
+  "opponent": {
+    "braveAfter": 4,
+    "overlookEvery": 6,
+    "safety": 2
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "c1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "turn-based-capture",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "rook",
+      "square": "a6"
+    },
+    {
+      "piece": "knight",
+      "square": "e6"
+    },
+    {
+      "piece": "bishop",
+      "square": "d5"
+    }
+  ],
+  "title": "A Clever Little Team",
+  "tutorialPath": [],
+  "world": "Team Adventures"
+}

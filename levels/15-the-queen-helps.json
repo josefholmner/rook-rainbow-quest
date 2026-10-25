@@ -1,0 +1,82 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "pawn",
+      "square": "b2"
+    }
+  ],
+  "board": {
+    "height": 5,
+    "width": 5
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "c1",
+      "to": "d1"
+    },
+    {
+      "from": "a1",
+      "to": "a3"
+    },
+    {
+      "from": "b2",
+      "to": "a3"
+    },
+    {
+      "from": "d1",
+      "to": "d3"
+    }
+  ],
+  "goal": "capture-all-targets",
+  "icon": {
+    "badge": 1,
+    "opponent": "rook",
+    "piece": "queen"
+  },
+  "id": "match-05",
+  "initiallySelected": false,
+  "intro": "A queen and rook give a large advantage; the pawn can help and can promote to a queen.",
+  "movementReminder": "Queens move straight or diagonally.",
+  "nextLevelId": "match-06",
+  "opponent": {
+    "braveAfter": 3,
+    "overlookEvery": 4,
+    "safety": 1
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "c1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "turn-based-capture",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "rook",
+      "square": "e5"
+    },
+    {
+      "piece": "pawn",
+      "square": "d4"
+    }
+  ],
+  "title": "The Queen Helps",
+  "tutorialPath": [],
+  "world": "Friendly Matches"
+}

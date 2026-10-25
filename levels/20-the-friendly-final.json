@@ -1,0 +1,106 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "bishop",
+      "square": "f1"
+    },
+    {
+      "piece": "pawn",
+      "square": "d2"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    },
+    {
+      "piece": "pawn",
+      "square": "b2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "b2",
+      "to": "b3"
+    },
+    {
+      "from": "c1",
+      "to": "b2"
+    },
+    {
+      "from": "f1",
+      "to": "a6"
+    },
+    {
+      "from": "a1",
+      "to": "f1"
+    },
+    {
+      "from": "f1",
+      "to": "f2"
+    },
+    {
+      "from": "b2",
+      "to": "b3"
+    }
+  ],
+  "goal": "capture-all-targets",
+  "icon": {
+    "badge": 1,
+    "opponent": "queen",
+    "piece": "queen"
+  },
+  "id": "match-10",
+  "initiallySelected": false,
+  "intro": "The strongest gentle opponent in this campaign. You still start ahead, and restarting is always free.",
+  "movementReminder": "Queens move straight or diagonally.",
+  "nextLevelId": "mate-01",
+  "opponent": {
+    "braveAfter": 4,
+    "overlookEvery": 6,
+    "safety": 3
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "c1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "turn-based-capture",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "queen",
+      "square": "f6"
+    },
+    {
+      "piece": "rook",
+      "square": "a6"
+    },
+    {
+      "piece": "pawn",
+      "square": "c5"
+    }
+  ],
+  "title": "The Friendly Final",
+  "tutorialPath": [],
+  "world": "Team Adventures"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lesson-knight-02",
+  "title": "Two Little Hops",
+  "world": "Piece Garden",
+  "board": {
+    "width": 4,
+    "height": 4
+  },
+  "coordinates": "algebraic-bottom-left",
+  "player": {
+    "piece": "knight",
+    "square": "a1"
+  },
+  "allies": [],
+  "targets": [
+    {
+      "piece": "pawn",
+      "square": "d3"
+    },
+    {
+      "piece": "pawn",
+      "square": "b4"
+    },
+    {
+      "piece": "pawn",
+      "square": "c4"
+    }
+  ],
+  "rules": {
+    "mode": "stationary-capture",
+    "targetsMove": false,
+    "targetsAttack": false,
+    "allowNonCaptureMoves": true,
+    "allowJumping": true,
+    "moveLimit": null,
+    "timeLimitSeconds": null
+  },
+  "goal": "capture-all-targets",
+  "intro": "Plan a route with at least 2 quiet move(s), then capture every pawn.",
+  "movementReminder": "Knights hop in an L.",
+  "initiallySelected": true,
+  "showLegalMoves": true,
+  "tutorialPath": [
+    "a1",
+    "c2"
+  ],
+  "exampleSolution": [
+    "a1",
+    "c2",
+    "b4",
+    "d3",
+    "b2",
+    "c4"
+  ],
+  "exampleTurns": [],
+  "opponent": {
+    "overlookEvery": 0,
+    "safety": 0
+  },
+  "icon": {
+    "piece": "knight",
+    "opponent": null,
+    "badge": 2
+  },
+  "completionStars": 1,
+  "nextLevelId": "lesson-pawn-01",
+  "minimumQuietMoves": 2,
+  "pawnPromotion": false
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "lesson-queen-02",
+  "title": "Queen's Rainbow",
+  "world": "Piece Garden",
+  "board": {
+    "width": 5,
+    "height": 5
+  },
+  "coordinates": "algebraic-bottom-left",
+  "player": {
+    "piece": "queen",
+    "square": "a1"
+  },
+  "allies": [],
+  "targets": [
+    {
+      "piece": "pawn",
+      "square": "d2"
+    },
+    {
+      "piece": "pawn",
+      "square": "a4"
+    },
+    {
+      "piece": "pawn",
+      "square": "e5"
+    }
+  ],
+  "rules": {
+    "mode": "stationary-capture",
+    "targetsMove": false,
+    "targetsAttack": false,
+    "allowNonCaptureMoves": true,
+    "allowJumping": false,
+    "moveLimit": null,
+    "timeLimitSeconds": null
+  },
+  "goal": "capture-all-targets",
+  "intro": "Plan a route with at least 2 quiet move(s), then capture every pawn.",
+  "movementReminder": "Queens move straight or diagonally.",
+  "initiallySelected": true,
+  "showLegalMoves": true,
+  "tutorialPath": [
+    "a1",
+    "a4"
+  ],
+  "exampleSolution": [
+    "a1",
+    "a4",
+    "a1",
+    "e5",
+    "e1",
+    "d2"
+  ],
+  "exampleTurns": [],
+  "opponent": {
+    "overlookEvery": 0,
+    "safety": 0
+  },
+  "icon": {
+    "piece": "queen",
+    "opponent": null,
+    "badge": 2
+  },
+  "completionStars": 1,
+  "nextLevelId": "match-01",
+  "minimumQuietMoves": 2,
+  "pawnPromotion": false
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "meadow-01",
+  "title": "Rook's Rainbow Trail",
+  "world": "Piece Garden",
+  "board": {
+    "width": 4,
+    "height": 4
+  },
+  "coordinates": "algebraic-bottom-left",
+  "player": {
+    "piece": "rook",
+    "square": "a1"
+  },
+  "allies": [],
+  "targets": [
+    {
+      "piece": "pawn",
+      "square": "b1"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    }
+  ],
+  "rules": {
+    "mode": "stationary-capture",
+    "targetsMove": false,
+    "targetsAttack": false,
+    "allowNonCaptureMoves": true,
+    "allowJumping": false,
+    "moveLimit": null,
+    "timeLimitSeconds": null
+  },
+  "goal": "capture-all-targets",
+  "intro": "Plan a route with at least 1 quiet move(s), then capture every pawn.",
+  "movementReminder": "Rooks move straight.",
+  "initiallySelected": true,
+  "showLegalMoves": true,
+  "tutorialPath": [
+    "a1",
+    "b1"
+  ],
+  "exampleSolution": [
+    "a1",
+    "b1",
+    "a1",
+    "a2"
+  ],
+  "exampleTurns": [],
+  "opponent": {
+    "overlookEvery": 0,
+    "safety": 0
+  },
+  "icon": {
+    "piece": "rook",
+    "opponent": null,
+    "badge": 1
+  },
+  "completionStars": 1,
+  "nextLevelId": "adventure-02",
+  "minimumQuietMoves": 1,
+  "pawnPromotion": false
+}

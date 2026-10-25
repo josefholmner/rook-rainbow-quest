@@ -1,0 +1,20 @@
+[
+  {
+    "id": "world-01",
+    "title": "Sunflower Meadows",
+    "firstLevelId": "meadow-01",
+    "lastLevelId": "match-10"
+  },
+  {
+    "id": "world-02",
+    "title": "Checkmate Castle",
+    "firstLevelId": "mate-01",
+    "lastLevelId": "mate-20"
+  },
+  {
+    "id": "world-03",
+    "title": "Royal Chess Kingdom",
+    "firstLevelId": "chess-01",
+    "lastLevelId": "chess-20"
+  }
+]

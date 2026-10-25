@@ -1,0 +1,98 @@
+{
+  "allies": [
+    {
+      "piece": "bishop",
+      "square": "b1"
+    },
+    {
+      "piece": "pawn",
+      "square": "c2"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "c2",
+      "to": "c3"
+    },
+    {
+      "from": "d1",
+      "to": "e2"
+    },
+    {
+      "from": "e2",
+      "to": "a6"
+    },
+    {
+      "from": "b1",
+      "to": "e4"
+    },
+    {
+      "from": "a6",
+      "to": "f6"
+    },
+    {
+      "from": "f6",
+      "to": "b2"
+    }
+  ],
+  "goal": "capture-all-targets",
+  "icon": {
+    "badge": 1,
+    "opponent": "bishop",
+    "piece": "queen"
+  },
+  "id": "match-07",
+  "initiallySelected": false,
+  "intro": "A slightly larger board and three opposing pieces, with a strong queen on your side.",
+  "movementReminder": "Queens move straight or diagonally.",
+  "nextLevelId": "match-08",
+  "opponent": {
+    "braveAfter": 3,
+    "overlookEvery": 5,
+    "safety": 2
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "d1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "turn-based-capture",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "bishop",
+      "square": "f6"
+    },
+    {
+      "piece": "rook",
+      "square": "a6"
+    },
+    {
+      "piece": "pawn",
+      "square": "e4"
+    }
+  ],
+  "title": "Teamwork in the Woods",
+  "tutorialPath": [],
+  "world": "Team Adventures"
+}

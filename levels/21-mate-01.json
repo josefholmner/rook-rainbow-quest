@@ -1,0 +1,71 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "b3"
+    },
+    {
+      "piece": "queen",
+      "square": "f1"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "a1",
+      "to": "d1"
+    },
+    {
+      "from": "f1",
+      "to": "b5"
+    }
+  ],
+  "goal": "checkmate",
+  "icon": {
+    "badge": 1,
+    "opponent": "king",
+    "piece": "rook"
+  },
+  "id": "mate-01",
+  "initiallySelected": false,
+  "intro": "Your queen helps the rooks cover the king's escapes.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Give check and cover every escape. Never capture the king.",
+  "nextLevelId": "mate-02",
+  "opponent": {
+    "braveAfter": 2,
+    "overlookEvery": 3,
+    "safety": 0
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "rook",
+    "square": "a1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "checkmate",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "d4"
+    }
+  ],
+  "title": "Hello, King!",
+  "tutorialPath": [],
+  "world": "Checkmate Castle"
+}

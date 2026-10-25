@@ -1,0 +1,99 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "rook",
+      "square": "c1"
+    },
+    {
+      "piece": "bishop",
+      "square": "d1"
+    },
+    {
+      "piece": "knight",
+      "square": "a3"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "d1",
+      "to": "f3"
+    },
+    {
+      "from": "a1",
+      "to": "a2"
+    },
+    {
+      "from": "b1",
+      "to": "e4"
+    }
+  ],
+  "goal": "checkmate",
+  "icon": {
+    "badge": 2,
+    "opponent": "king",
+    "piece": "queen"
+  },
+  "id": "mate-12",
+  "initiallySelected": false,
+  "intro": "Clear the bishop before closing the mating net.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Give check and cover every escape. Never capture the king.",
+  "nextLevelId": "mate-13",
+  "opponent": {
+    "braveAfter": 3,
+    "overlookEvery": 5,
+    "safety": 1
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "b1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "checkmate",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "e5"
+    },
+    {
+      "piece": "pawn",
+      "square": "d4"
+    },
+    {
+      "piece": "bishop",
+      "square": "c4"
+    },
+    {
+      "piece": "pawn",
+      "square": "c3"
+    }
+  ],
+  "title": "Meet the Bishop",
+  "tutorialPath": [],
+  "world": "Checkmate Castle"
+}

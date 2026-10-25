@@ -1,0 +1,75 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "rook",
+      "square": "b2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "a1",
+      "to": "a4"
+    },
+    {
+      "from": "c1",
+      "to": "c2"
+    }
+  ],
+  "goal": "checkmate",
+  "icon": {
+    "badge": 2,
+    "opponent": "king",
+    "piece": "queen"
+  },
+  "id": "mate-04",
+  "initiallySelected": false,
+  "intro": "Keep one rook as a fence while another piece gives check.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Give check and cover every escape. Never capture the king.",
+  "nextLevelId": "mate-05",
+  "opponent": {
+    "braveAfter": 2,
+    "overlookEvery": 3,
+    "safety": 0
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "c1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "checkmate",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "d4"
+    },
+    {
+      "piece": "pawn",
+      "square": "c2"
+    }
+  ],
+  "title": "The Little Gate",
+  "tutorialPath": [],
+  "world": "Checkmate Castle"
+}

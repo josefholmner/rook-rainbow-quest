@@ -1,0 +1,87 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "rook",
+      "square": "h1"
+    },
+    {
+      "piece": "pawn",
+      "square": "e2"
+    }
+  ],
+  "board": {
+    "height": 8,
+    "width": 8
+  },
+  "castlingRights": "KQ",
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "e2",
+      "to": "e4"
+    },
+    {
+      "from": "a1",
+      "to": "d1"
+    },
+    {
+      "from": "h1",
+      "to": "h4"
+    }
+  ],
+  "finalBoss": false,
+  "goal": "checkmate",
+  "icon": {
+    "badge": 1,
+    "castle": false,
+    "opponent": "king",
+    "piece": "king"
+  },
+  "id": "chess-03",
+  "initiallySelected": false,
+  "intro": "Castle by selecting your king, then c1 or g1. Both king and rook must be unmoved and the king must stay safe.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Keep your king safe and checkmate the other king.",
+  "nextLevelId": "chess-04",
+  "openingOnly": true,
+  "opponent": {
+    "braveAfter": 4,
+    "overlookEvery": 3,
+    "safety": 0
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "king",
+    "square": "e1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "standard-chess",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "e8"
+    },
+    {
+      "piece": "pawn",
+      "square": "e7"
+    }
+  ],
+  "title": "Castle to Safety",
+  "tutorialPath": [],
+  "world": "Royal Chess Kingdom"
+}

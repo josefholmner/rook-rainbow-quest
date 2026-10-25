@@ -1,0 +1,40 @@
+ROOK RAINBOW QUEST — v0.9.0
+
+SPELA / PLAY
+Dubbelklicka på Play Rook Rainbow Quest.exe (tornikonen).
+Behåll startprogrammet med spelfilerna; lägg gärna en genväg på skrivbordet.
+Spelet körs direkt på Windows 10/11 (64 bitar). Ingen installation behövs.
+
+Double-click Play Rook Rainbow Quest.exe. Keep it with the game files;
+create a desktop shortcut if desired. Windows 10/11 x64, no installation needed.
+If using the ZIP, extract the whole ZIP first. All assets are embedded.
+
+Spelet börjar på svenska. Inställningar > Språk: Svenska eller English.
+The game starts in Swedish. Settings > Language switches to English.
+
+Piltangenter: flytta mellan världar och banor. Enter: gå in/spela.
+Klicka på en pjäs, sedan på en lysande ruta. Tips visar ett möjligt drag.
+Arrows: move between worlds/levels. Enter: enter/play.
+Click a piece, then a glowing square. Hint suggests a legal move.
+
+Tre världar med tjugo banor vardera: Solrosängarna, Schackmattslottet och
+Kungliga schackriket. Varje värld har egen färgglad bakgrund.
+Three worlds with twenty levels each: Sunflower Meadows, Checkmate Castle,
+and Royal Chess Kingdom, with distinct colorful backgrounds.
+
+Värld 1: lär dig pjäser och ta motståndarens pjäser. Bönder kan bli damer.
+Värld 2: schackmatt på 6x6-bräde. Motståndaren har kung; du har ett försprång.
+Värld 3: vanliga schackregler på 8x8-bräde, med båda kungarna.
+World 1: learn pieces and capture opponents; pawns can become queens.
+World 2: checkmate on 6x6, with an advantage and only an opponent king.
+World 3: regular chess on 8x8 with kings on both sides. Castle by moving
+king to c/g. En passant lasts one turn; choose a piece when promoting.
+
+Ingen ångra-knapp, inga liv eller fullständig game over. Börja om gratis.
+Remi och förlust ger ett nytt försök. Dina tidigare stjärnor finns kvar.
+No undo, lives or full game over. Retry freely; earned stars remain safe.
+Only completing the real objective earns a star. Unlock all levels gives access only.
+
+M: ljud av/på / sound. F11: fullskärm / fullscreen.
+Tab / Shift+Tab: välj knapp / select button. Enter: aktivera / activate.
+Ny sparning / Progress: %LOCALAPPDATA%\RookRainbowQuest\progress.json

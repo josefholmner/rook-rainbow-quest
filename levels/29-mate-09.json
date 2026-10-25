@@ -1,0 +1,99 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "a1"
+    },
+    {
+      "piece": "rook",
+      "square": "c2"
+    },
+    {
+      "piece": "bishop",
+      "square": "d1"
+    },
+    {
+      "piece": "knight",
+      "square": "b2"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    }
+  ],
+  "board": {
+    "height": 6,
+    "width": 6
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "b2",
+      "to": "c4"
+    },
+    {
+      "from": "c2",
+      "to": "e2"
+    },
+    {
+      "from": "b1",
+      "to": "e4"
+    }
+  ],
+  "goal": "checkmate",
+  "icon": {
+    "badge": 1,
+    "opponent": "king",
+    "piece": "queen"
+  },
+  "id": "mate-09",
+  "initiallySelected": false,
+  "intro": "Open a file before bringing a rook closer.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Give check and cover every escape. Never capture the king.",
+  "nextLevelId": "mate-10",
+  "opponent": {
+    "braveAfter": 3,
+    "overlookEvery": 4,
+    "safety": 1
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "queen",
+    "square": "b1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "checkmate",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "e5"
+    },
+    {
+      "piece": "pawn",
+      "square": "d4"
+    },
+    {
+      "piece": "bishop",
+      "square": "c4"
+    },
+    {
+      "piece": "pawn",
+      "square": "c3"
+    }
+  ],
+  "title": "Open the File",
+  "tutorialPath": [],
+  "world": "Checkmate Castle"
+}

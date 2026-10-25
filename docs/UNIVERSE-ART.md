@@ -1,0 +1,7 @@
+# Universe artwork — v0.6
+
+Generated with the built-in imagegen tool, using the imagegen skill. Production file: `assets/universe-v06.png`. The tool returned 1586×992 pixels; this is deliberately not described as 4K artwork. It is embedded and uploaded once at startup, with linear filtering. It is used only by the Worlds scene. Other scenes retain `assets/meadow-v2.png`.
+
+## Final generation prompt
+
+Use case: illustration-story. Asset type: full-screen background painting for the top-level universe/world selector of a cheerful native chess adventure for children age 6–7. Create an original happy storybook outer-space universe, wide landscape 16:10 composition, approximately 1920 by 1200 (not 4K). Deep periwinkle and indigo sky with soft teal, lavender and pink nebula clouds, tiny warm golden stars and a few whimsical rounded pastel planets around the outer edges. Warm inviting magical mood, soft painterly detail, polished children's game background, gentle light, no scary darkness. Keep the middle around 50% across and 55% down spacious and relatively calm for a separately drawn floating world island and mascot. Keep upper-left and lower-center areas visually simple for opaque cream menu panels. This is background artwork only: no text, numbers, lettering, logos, watermark, chess pieces, characters, buttons, UI panels, level nodes, map paths, or interactive-looking markers. A beautiful coherent space panorama, distinct from a grassy meadow, with readable broad shapes rather than excessive fine noise.

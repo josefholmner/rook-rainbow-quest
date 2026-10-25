@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "id": "adventure-02",
+  "title": "Up to the Clouds",
+  "world": "Piece Garden",
+  "board": {
+    "width": 4,
+    "height": 4
+  },
+  "coordinates": "algebraic-bottom-left",
+  "player": {
+    "piece": "rook",
+    "square": "a1"
+  },
+  "allies": [],
+  "targets": [
+    {
+      "piece": "pawn",
+      "square": "c1"
+    },
+    {
+      "piece": "pawn",
+      "square": "b2"
+    },
+    {
+      "piece": "pawn",
+      "square": "d3"
+    }
+  ],
+  "rules": {
+    "mode": "stationary-capture",
+    "targetsMove": false,
+    "targetsAttack": false,
+    "allowNonCaptureMoves": true,
+    "allowJumping": false,
+    "moveLimit": null,
+    "timeLimitSeconds": null
+  },
+  "goal": "capture-all-targets",
+  "intro": "Plan a route with at least 2 quiet move(s), then capture every pawn.",
+  "movementReminder": "Rooks move straight.",
+  "initiallySelected": true,
+  "showLegalMoves": true,
+  "tutorialPath": [
+    "a1",
+    "c1"
+  ],
+  "exampleSolution": [
+    "a1",
+    "c1",
+    "b1",
+    "b2",
+    "d2",
+    "d3"
+  ],
+  "exampleTurns": [],
+  "opponent": {
+    "overlookEvery": 0,
+    "safety": 0
+  },
+  "icon": {
+    "piece": "rook",
+    "opponent": null,
+    "badge": 2
+  },
+  "completionStars": 1,
+  "nextLevelId": "lesson-bishop-01",
+  "minimumQuietMoves": 2,
+  "pawnPromotion": false
+}

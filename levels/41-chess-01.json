@@ -1,0 +1,79 @@
+{
+  "allies": [
+    {
+      "piece": "queen",
+      "square": "d1"
+    },
+    {
+      "piece": "rook",
+      "square": "h1"
+    }
+  ],
+  "board": {
+    "height": 8,
+    "width": 8
+  },
+  "castlingRights": "K",
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "d1",
+      "to": "d4"
+    },
+    {
+      "from": "h1",
+      "to": "h4"
+    },
+    {
+      "from": "h4",
+      "to": "e4"
+    }
+  ],
+  "finalBoss": false,
+  "goal": "checkmate",
+  "icon": {
+    "badge": 1,
+    "castle": false,
+    "opponent": "king",
+    "piece": "queen"
+  },
+  "id": "chess-01",
+  "initiallySelected": false,
+  "intro": "Your king is part of the team. Protect it while your queen and rook hunt for checkmate.",
+  "minimumQuietMoves": 0,
+  "movementReminder": "Keep your king safe and checkmate the other king.",
+  "nextLevelId": "chess-02",
+  "openingOnly": true,
+  "opponent": {
+    "braveAfter": 4,
+    "overlookEvery": 3,
+    "safety": 0
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "king",
+    "square": "e1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "standard-chess",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "king",
+      "square": "e8"
+    }
+  ],
+  "title": "Hello, Your Majesty!",
+  "tutorialPath": [],
+  "world": "Royal Chess Kingdom"
+}

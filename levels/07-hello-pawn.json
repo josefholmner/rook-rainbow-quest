@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "lesson-pawn-01",
+  "title": "Hello, Pawn!",
+  "world": "Piece Garden",
+  "board": {
+    "width": 5,
+    "height": 5
+  },
+  "coordinates": "algebraic-bottom-left",
+  "player": {
+    "piece": "pawn",
+    "square": "b1"
+  },
+  "allies": [],
+  "targets": [
+    {
+      "piece": "pawn",
+      "square": "c3"
+    },
+    {
+      "piece": "pawn",
+      "square": "b4"
+    }
+  ],
+  "rules": {
+    "mode": "stationary-capture",
+    "targetsMove": false,
+    "targetsAttack": false,
+    "allowNonCaptureMoves": true,
+    "allowJumping": false,
+    "moveLimit": null,
+    "timeLimitSeconds": null
+  },
+  "goal": "capture-all-targets",
+  "intro": "Plan a route with at least 1 quiet move(s), then capture every pawn.",
+  "movementReminder": "Pawns walk forward and capture diagonally.",
+  "initiallySelected": true,
+  "showLegalMoves": true,
+  "tutorialPath": [
+    "b1",
+    "b2"
+  ],
+  "exampleSolution": [
+    "b1",
+    "b2",
+    "c3",
+    "b4"
+  ],
+  "exampleTurns": [],
+  "opponent": {
+    "overlookEvery": 0,
+    "safety": 0
+  },
+  "icon": {
+    "piece": "pawn",
+    "opponent": null,
+    "badge": 1
+  },
+  "completionStars": 1,
+  "nextLevelId": "lesson-pawn-02",
+  "minimumQuietMoves": 1,
+  "pawnPromotion": true
+}

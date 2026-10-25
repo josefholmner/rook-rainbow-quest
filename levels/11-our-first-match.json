@@ -1,0 +1,78 @@
+{
+  "allies": [
+    {
+      "piece": "rook",
+      "square": "d1"
+    },
+    {
+      "piece": "pawn",
+      "square": "a2"
+    }
+  ],
+  "board": {
+    "height": 4,
+    "width": 4
+  },
+  "completionStars": 1,
+  "coordinates": "algebraic-bottom-left",
+  "exampleSolution": [],
+  "exampleTurns": [
+    {
+      "from": "a1",
+      "to": "c1"
+    },
+    {
+      "from": "c1",
+      "to": "c3"
+    },
+    {
+      "from": "c3",
+      "to": "a3"
+    }
+  ],
+  "goal": "capture-all-targets",
+  "icon": {
+    "badge": 1,
+    "opponent": "pawn",
+    "piece": "rook"
+  },
+  "id": "match-01",
+  "initiallySelected": false,
+  "intro": "Two rooks against two pawns. Learn to wait for the reply before moving again.",
+  "movementReminder": "Rooks move straight.",
+  "nextLevelId": "match-02",
+  "opponent": {
+    "braveAfter": 2,
+    "overlookEvery": 2,
+    "safety": 0
+  },
+  "pawnPromotion": true,
+  "player": {
+    "piece": "rook",
+    "square": "a1"
+  },
+  "rules": {
+    "allowJumping": true,
+    "allowNonCaptureMoves": true,
+    "mode": "turn-based-capture",
+    "moveLimit": null,
+    "targetsAttack": true,
+    "targetsMove": true,
+    "timeLimitSeconds": null
+  },
+  "schemaVersion": 1,
+  "showLegalMoves": true,
+  "targets": [
+    {
+      "piece": "pawn",
+      "square": "a3"
+    },
+    {
+      "piece": "pawn",
+      "square": "c4"
+    }
+  ],
+  "title": "Our First Match",
+  "tutorialPath": [],
+  "world": "Friendly Matches"
+}
