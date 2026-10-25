@@ -1,4 +1,4 @@
-# Implementation — Rook Rainbow Quest v0.10.0
+# Implementation — Rook Rainbow Quest v0.10.1
 
 ## Campaign and world navigation
 
@@ -26,7 +26,7 @@ Initial sessions/routes are cached. A coalescing save worker handles atomic writ
 
 Pure tests exercise geometry, legality, check responses, checkmate/stalemate, promotion, every authored route, hints, world unlocking, profile/save isolation, localization, DPI and deferred exit. Native regressions use isolated state and application handlers, not OS input automation. The full campaign crosses three worlds, plays forty winning routes and twenty legal regular-chess openings, and exports screenshots. Separate regressions cover main menu, retries, checkmate/stalemate, settings in both languages at multiple sizes, and process exit in both window modes.
 
-Each level has separate editable JSON/Markdown. Git history is the version archive. Root ignore rules exclude `target`, local toolchains, older `dist` packages, archive directories and ZIP files generally. Explicit exceptions check in the latest v0.10.0 executable folder with licenses, its Windows ZIP, SHA-256 checksums and the stable launcher. Update these version-specific exceptions when replacing the checked-in release.
+Each level has separate editable JSON/Markdown. Git history is the version archive. Root ignore rules exclude `target`, local toolchains, older `dist` packages, archive directories and ZIP files generally. Explicit exceptions check in the latest v0.10.1 executable folder with licenses, its Windows ZIP, SHA-256 checksums and the stable launcher. Update these version-specific exceptions when replacing the checked-in release.
 
 Release profiles retain debug information without shipping PDB files. A stripped v0.7 candidate was quarantined by Defender; the fresh diagnostic release was scanned before execution. See TEST-RESULTS.md for the exact validation and any remaining release limits.
 

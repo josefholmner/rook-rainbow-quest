@@ -1874,9 +1874,9 @@ impl App {
             103,
             Rect::new(655., 340., 280., 58.),
             if self.save.reduced_motion {
-                "Gentle motion: on"
+                "Move animation: Off"
             } else {
-                "Gentle motion: off"
+                "Move animation: On"
             },
             MINT,
             true,
@@ -2794,6 +2794,7 @@ async fn main() {
                         assert!(worlds::unlocked(&app.worlds, &app.levels, &app.save, 1));
                         assert!(!app.interactive.contains(&110));
                     }
+                    18 | 22 | 26 | 32 => app.activated = Some(103),
                     24 => app.activated = Some(109),
                     34 => app.activated = Some(106),
                     40 => request_new_screen_size(960., 600.),
@@ -3226,6 +3227,8 @@ async fn main() {
                 _ => None,
             } {
                 assert!(app.settings);
+                // Exercise the real toggle in both languages: Off means reduced motion.
+                assert_eq!(app.save.reduced_motion, frame == 20 || frame == 30);
                 assert_eq!(
                     app.save.language,
                     if frame == 30 || frame == 48 {

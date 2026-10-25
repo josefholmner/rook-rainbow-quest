@@ -1,20 +1,17 @@
-# Rook Rainbow Quest v0.10.0 validation — 2026-10-25
+# Rook Rainbow Quest v0.10.1 validation — 2026-10-25
 
-- All 94 Rust tests passed (91 library, two rendering/layout, one launcher). Formatting and clippy with warnings denied passed. All four packaging regressions passed.
-- Added regressions ensure every board size remains unobstructed by result banners, friendly formations differ across World 2 levels 3–20 and all twenty World 3 levels, and the four early castle teams have distinct compositions with pawn helpers.
-- All twenty World 2 winning routes were replayed against the real deterministic opponent. Changed positions have regenerated routes. All twenty World 3 guides remain legal three-player-move openings; these are not proofs of forced wins. The existing tests still verify army growth, material advantage, special rules, and the full standard finale.
-- The optimized native campaign passed all sixty levels: forty winning routes and twenty regular-chess opening tours. All eight native regressions passed: dead positions, regular chess/promotion, checkmate/stalemate, main menu, retry, settings and both exit modes. Tests use isolated saves.
-- Visually checked Swedish and English stalemate banners, victory and world completion, and a revised World 3 formation. Every board square stays visible; old underlying controls are hidden. Draw explanations also cover World 3 stalemate. Promotion retains a translucent chooser and settings retains its clear readable panel.
-- Verified SHA-256 for all forty World 1 JSON/description files against the pre-change baseline: unchanged. World 2 retains its first two queen-assisted lesson designs; World 3 retains its first five special-rule designs, material progression and full-board finale. All stable IDs, saves and rules are retained.
-- Updated each reviewed level description and the World 2/3 design documentation with exact armies, formation notes and verified routes/openings.
-- Game and native launcher passed pre/post Microsoft Defender scans and native execution checks. Launcher tests passed GUI subsystem, icon/version, adjacent release folder, extracted layout and Unicode/spaced path handoff. No security configuration changed.
-- ZIP executables match the published game/launcher; all three SHA-256 manifest entries match. The current release folder, launcher, ZIP and manifest are prepared in dist. The former v0.9.0 package is outside dist under ignored target/superseded-release-files, so the prepared release files contain the latest version only.
-- Existing LFS policy covers all binary assets and new release files. Git staging, configuration, commits and pushing remain with the user; this work changed files only.
+- Renamed the animation setting to Move animation: On / Off (Draganimation: på / av). On maps to the existing full-animation preference; Off maps to reduced motion. Existing save values keep their behavior. No levels, opponent strength or progress data were changed.
+- All 94 Rust tests passed: 91 library, two rendering/layout, one launcher. Formatting, clippy with warnings denied, and all four packaging regressions passed. Both new labels are covered by localization checks.
+- The optimized native campaign passed all sixty levels, comprising forty winning routes and twenty legal regular-chess opening tours. All eight native regressions passed.
+- The settings regression now clicks the real animation toggle four times, checks reduced/full states in both languages, and captures both labels. Visually inspected Swedish Off and English On/Off screenshots for clarity and fit at fullscreen/windowed sizes. High-DPI/4K settings rendering remains covered.
+- Native launcher validation passed GUI subsystem, icon/version metadata, adjacent release folder, extracted layout and Unicode/spaced path handoff. Game and launcher passed pre/post Defender scans and real-time event checks. No security configuration changed.
+- ZIP executables and all manifest checksums match the published files. Current release files are in dist; the superseded v0.10.0 package is under ignored target/superseded-release-files. Existing LFS rules cover the new release files and binary assets. Git staging/configuration/commits/pushing remain with the user.
+- Native checks use isolated temporary saves; the active player's World 2 level 6 progress is untouched.
 
-Game SHA-256: 1516ACADDC1E32CC758BF35477DD1A7F6915F0A8F0CC55602BA01CD15DA50775
+Game SHA-256: CBA4F8969F9137BF72A85A5EA129A755B6ACA3408F59AD779EE39EF9498C14C8
 
-Launcher SHA-256: 7721C50D4941D4A2529D7D8F4FCF31ADBB0C03615955EFFA0BD9262E68356850
+Launcher SHA-256: 288DA75AE9D8C07C80F4957345CE3083A875AA196736C73A712BBC1EF8D774BC
 
-ZIP SHA-256: B0B79667AF5B833C4BD4D9F1833253F05CA82A62A2BABD71A6E569E8AA960EAF
+ZIP SHA-256: 0EFA51AFDAE73074C1A81FE5D44DF300DBBEFAA1766C4A3198FCDD8DCA18A2E1
 
-Raw native evidence: target/package-staging/9ee8c3057faa4c5d8ea560362a1a0dc1/validation/ and launcher-validation/ (ignored). Preview images and World 1 baseline: C:/Users/Admin/Documents/Codex/2026-10-23/i/outputs/Rook-Rainbow-Quest/v0.10.0/.
+Raw evidence: target/package-staging/18a8ff87813e4088a143aaacd29ba37f/validation/ and launcher-validation/ (ignored).

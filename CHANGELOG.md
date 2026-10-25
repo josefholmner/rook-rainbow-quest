@@ -1,5 +1,11 @@
 # Releases
 
+## 0.10.1 — Clear animation controls
+
+- Renamed the settings toggle to “Move animation: On / Off” in English and “Draganimation: på / av” in Swedish. On means full animation; Off means reduced motion. Existing saved preferences keep their behavior.
+- Native settings regression clicks the toggle in both languages and verifies that Off selects reduced motion and On restores full animation.
+
+
 ## 0.10.0 — Room to learn
 
 - Translucent result banners sit below the board for draws, retries, wins and world completion. The final position remains visible; promotion choices also use a translucent card. Stalemate explains that the king is not in check and the opponent has no legal moves.

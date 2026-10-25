@@ -25,9 +25,9 @@ Tests run the LFS asset audit, formatting, pure Rust/renderer/launcher tests, cl
 Release output:
 
 - `dist/Play Rook Rainbow Quest.exe`: stable entry point above the versioned folder.
-- `dist/RookRainbowQuest-0.10.0/`: game, adjacent launcher, play instructions and licenses.
-- `dist/RookRainbowQuest-0.10.0-Windows-x64.zip`: portable player download.
-- `dist/RookRainbowQuest-0.10.0.sha256`: executable, launcher and ZIP hashes.
+- `dist/RookRainbowQuest-0.10.1/`: game, adjacent launcher, play instructions and licenses.
+- `dist/RookRainbowQuest-0.10.1-Windows-x64.zip`: portable player download.
+- `dist/RookRainbowQuest-0.10.1.sha256`: executable, launcher and ZIP hashes.
 
 Packaging rejects known quarantined hashes, checks Microsoft Defender before/after actual native runs, and verifies the launcher GUI subsystem, icon/version resources and path handling. Validation logs/screenshots stay under ignored `target/package-staging/`. It does not weaken Windows protection or sign the executables. See TEST-RESULTS.md for the latest local evidence; local checks do not imply a remote GitHub Actions run.
 

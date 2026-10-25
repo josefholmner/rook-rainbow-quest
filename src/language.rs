@@ -230,8 +230,8 @@ pub const TEXTS: &[(&str, &str)] = &[
     ("YOUR PLAYER", "DIN SPELARE"),
     ("Sound: off", "Ljud: av"),
     ("Sound: on", "Ljud: på"),
-    ("Gentle motion: on", "Lugna rörelser: på"),
-    ("Gentle motion: off", "Lugna rörelser: av"),
+    ("Move animation: On", "Draganimation: på"),
+    ("Move animation: Off", "Draganimation: av"),
     ("Softer", "Lägre"),
     ("Louder", "Högre"),
     ("Fullscreen", "Helskärm"),
@@ -359,6 +359,8 @@ mod tests {
             assert_ne!(translate(Language::Swedish, &w.title), w.title);
         }
         for key in [
+            "Move animation: On",
+            "Move animation: Off",
             "Continue",
             "New game",
             "Quit",
